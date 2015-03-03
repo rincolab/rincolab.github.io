@@ -1,0 +1,10 @@
+{% include top.html %}
+<body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
+  {% include header.html %}
+  
+  {{ content }}
+
+  {% include footer.html %}
+  {% include analytics.html %}
+</body>
+</html>

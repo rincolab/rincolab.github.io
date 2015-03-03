@@ -1,0 +1,33 @@
+<div id="header-wrapper">
+	<div class="container">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+
+					<!-- Logo -->
+						<h1><a href="/index.html" id="logo">RincoLab</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li{% if page.page_name == 'index' %} class="current_page_item"{% endif %}><a href="/index.html">Home</a></li>
+								<li{% if page.page_name == 'magento' %} class="current_page_item"{% endif %}><a href="/magento.html">Magento</a></li>
+								<li{% if page.page_name == 'about-us' %} class="current_page_item"{% endif %}><a href="/about-us.html">About Us</a></li>
+								<li{% if page.page_name == 'contact-us' %} class="current_page_item"{% endif %}><a href="/contact-us.html">Contact Us</a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</header>
+
+		  {% if page.page_name == 'index' %}
+			<div id="banner">
+				<h2><strong>RincoLab:</strong> Quality driven software consultancy</h2>
+				<p>Strive to deliver high-quality software solutions and products</p>
+				<a href="/contact-us.html" class="button big icon fa-file-text-o">Free Quote</a>
+			</div>
+      {% endif %}
+
+	</div>
+</div>

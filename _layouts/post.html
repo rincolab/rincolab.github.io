@@ -1,0 +1,29 @@
+---
+layout: site
+body_class: no-sidebar
+---
+
+<div id="main-wrapper">
+	<div class="wrapper style2">
+		<div class="inner">
+			<div class="container">
+				<div id="content">
+
+					<!-- Content -->
+
+						<article>
+							<header class="major">
+								<h2>{{ page.title }}</h2>
+								<p>{{ page.date | date: "%b %-d, %Y" }}</p>
+							</header>
+
+							{{content}}
+						</article>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+  {% include recent_posts.html %}
+</div>
